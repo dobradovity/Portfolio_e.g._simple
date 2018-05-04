@@ -1,0 +1,185 @@
+/*///////////////////////////////////////// CSS file created by Dragan Obradovity  */
+
+body{
+	margin: 0;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+#container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+h3 {
+	font-weight: 200;
+}
+
+* {
+ 	box-sizing: border-box;
+}
+
+/*///////////////////////////////////////// Header Section  */
+
+#heading {
+	display: flex;
+	justify-content: flex-start;
+	background-color: #E05151;
+	padding: 20px 0;
+	color: white;
+		
+}
+#heading h3 {
+	font-size: 18px;
+	margin: 20px 0;
+}
+
+
+/*///////////////// Nav Menu  */
+
+#nav-div{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	background-color: #868686;
+	margin: 3px 0 0 0;
+	padding:0;
+}
+
+#top-menu {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.menu-li {
+	list-style: none;
+	margin-right: 35px;
+}
+
+#about {
+	display: flex;
+	width: 80px;
+}
+/*///////////////// Hyper Links  */
+
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+	color: maroon;
+}
+
+a:active {
+	text-decoration: none;
+	color: white;
+}
+
+/*///////////////////////////////////////// Main Section  */
+
+.main-div {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 16px;
+}
+
+.cells-main {
+	width: 380px;
+	height: 350px;
+}
+
+.img-div {
+	width: 100%;
+	height: 260px;
+}
+
+.cells-main h2 {
+	padding: 0 10px 0 0	;
+	margin:0;
+	font-size: 19pt;
+	font-weight: 500;
+}
+
+/*///////////////// Images URL  */
+
+#lt {
+	background: url(img/developers-lt.jpg) 0 0 no-repeat;
+	background-size: 380px 260px;
+}
+
+#rt {
+	background: url(img/mic-rt.jpg) 0 0 no-repeat;
+	background-size: 380px 260px;
+}
+
+#lb {
+	background: url(img/codemonkey-lb.jpg) 0 0 no-repeat;
+	background-size: 380px 260px;
+}
+
+#rb {
+	background: url(img/codeweek-rb.jpg) 50% 0 no-repeat;
+	background-size: 500px 260px;
+}
+/*///////////////////////////////////////// Footer Section  */
+
+footer {
+	color: white;
+	background-color: #E05151;
+}
+footer div{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+footer h3{
+	margin:20px 0 10px 0;
+	font-size: 12pt;
+}
+
+/*///////////////////////////////////////// Responsive settings  */
+
+
+/* Tablets */ 
+@media only screen and (max-width:767px) {
+	#container {
+  		width:80%;
+  }
+
+
+/* many phones */ 
+@media only screen and (max-width:479px) {
+	#container {
+    	width:100%;
+  }
+}
+
+/* Iphone 6 plus */ 
+@media only screen and (max-width:415px) {
+	#container {
+    	width:97%;
+  }
+
+/* Galaxy s5 */ 
+  @media only screen and (max-width:360px) {
+	#container {
+    	width:110%;
+  }
+
+/* Iphone 5 */ 
+  @media screen and (device-aspect-ratio: 40/71) {
+  	#container {
+    	width:400px;
+  }
+  }
